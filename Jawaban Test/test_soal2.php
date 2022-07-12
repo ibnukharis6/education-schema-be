@@ -1,6 +1,6 @@
 <?php
 
-$data = [1, "kawah", 67, "1772", "edukasi", 7, 98, -1];
+$data = [1, "ka", 67, "wah", "1772", "edukasi", 7, 98, -1];
 
 for ($i = 0; $i < count($data); $i++) {
 
