@@ -1,0 +1,11 @@
+//query untuk menampilkan peserta dengan gaji tertinggi
+ SELECT nama, MAX(gaji) FROM kawahedukasi GROUP BY gaji ORDER BY gaji DESC LIMIT 1;
+
+//query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+ SELECT nama, kelas, MAX(nilai),  MAX(gaji) FROM kawahedukasi WHERE kelas = 'BACKEND' GROUP BY gaji ORDER BY gaji DESC LIMIT 1;
+
+//buatlah query untuk melihat total peserta yang berada dalam kelas frontend
+ SELECT kelas, count(*) FROM kawahedukasi WHERE kelas = 'FRONTEND';
+
+//buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+SELECT nama, kelas, MAX(jumlah_kehadiran), MAX(nilai) FROM kawahedukasi WHERE kelas = 'FRONTEND' GROUP BY jumlah_kehadiran ORDER BY jumlah_kehadiran DESC LIMIT 1;
